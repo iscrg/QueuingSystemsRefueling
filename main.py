@@ -20,7 +20,6 @@ CFG = {
         'customers': 4
     }
 }
-
 PRICE = {
     ru_local.AI80: 43,
     ru_local.AI92: 47.3,
