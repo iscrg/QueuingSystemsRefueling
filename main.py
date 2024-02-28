@@ -87,12 +87,12 @@ for time in range(1440):
     # If a customer arrives at the current time, we process it.
     stat_num = None
     if customers[0]['time'] == time:
-        m_queue = float('inf')
+        min_queue = float('inf')
         for stat in CFG:
             if customers[0]['type'] in CFG[stat]['type'] and \
-               len(gas_stat[stat]) < m_queue and \
+               len(gas_stat[stat]) < min_queue and \
                len(gas_stat[stat]) < CFG[stat]['customers']:
-                m_queue = len(gas_stat[stat])
+                min_queue = len(gas_stat[stat])
                 stat_num = stat
 
         # Calculation of refueling time.
