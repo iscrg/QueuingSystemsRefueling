@@ -4,24 +4,28 @@ import math
 
 CFG = {
     1: {
-        'type': ['АИ-80'],
+        'type': [ru_local.AI80],
         'customers': 3
     },
     2: {
-        'type': ['АИ-92'],
+        'type': [ru_local.AI92],
         'customers': 2
     },
     3: {
-        'type': ['АИ-92', 'АИ-95', 'АИ-98'],
+        'type': [
+            ru_local.AI92,
+            ru_local.AI95,
+            ru_local.AI98
+        ],
         'customers': 4
     }
 }
 
 PRICE = {
-    'АИ-80': 43,
-    'АИ-92': 47.3,
-    'АИ-95': 50.8,
-    'АИ-98': 67.5
+    ru_local.AI80: 43,
+    ru_local.AI92: 47.3,
+    ru_local.AI95: 50.8,
+    ru_local.AI98: 67.5
 }
 
 gas_stat = {1: [], 2: [], 3: []}
@@ -29,10 +33,10 @@ unfilled = 0
 revenue = 0
 customers = []
 fuel = {
-    'АИ-80': 0,
-    'АИ-92': 0,
-    'АИ-95': 0,
-    'АИ-98': 0
+    ru_local.AI80: 0,
+    ru_local.AI92: 0,
+    ru_local.AI95: 0,
+    ru_local.AI98: 0
 }
 
 

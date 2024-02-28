@@ -1,4 +1,8 @@
 RESULTS = '\nРезультаты:'
+AI80 = 'АИ-80'
+AI92 = 'АИ-92'
+AI95 = 'АИ-95'
+AI98 = 'АИ-98'
 
 
 def filled(time, client_name):
